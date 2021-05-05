@@ -90,16 +90,16 @@ h4+p {
 }
 
 #beach-banner {
-  display:inline-flex;
+  /* display:inline-flex;
   width:100%;
   height: 30vh;
-  min-height: 300px;
+  min-height: 300px; */
   /* Create the parallax scrolling effect */
-  -webkit-background-size: cover;
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-bottom: 150px;
+  margin-bottom: 150px; */
 }
 
 .beaches {
@@ -264,8 +264,8 @@ h4+p {
   }
 }
 
-@media only screen and (min-width: 415px)  {
+/* @media only screen and (min-width: 415px)  {
   #beach-banner, .carousel-item {
     background-attachment: fixed;
   }
-}
+} */
