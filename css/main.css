@@ -74,10 +74,12 @@ h4+p {
 }
 
 #beach-banner {
-  height: 30vh;
+  max-width: 100%;
+  height:100%;
+  /* height: 30vh;
   min-height: 300px;
   /* Create the parallax scrolling effect */
-  /* background-attachment: fixed;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
