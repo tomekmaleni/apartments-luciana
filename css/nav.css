@@ -165,6 +165,11 @@ footer .container-fluid {
   flex-wrap: wrap;
 }
 
+.foot-middle {
+  color:#767676;
+  background-color: #252525;
+}
+
 .foot-contact {
   display:flex;
   flex-direction: column;
@@ -223,6 +228,11 @@ h5 {
   text-decoration: none;
 }
 
+.foot-copy {
+  color:#666666;
+  background-color: #1c1c1c;
+}
+
 @media only screen and (max-width: 1054px) {
   .foot {
     flex-direction:column;
@@ -244,5 +254,8 @@ h5 {
   }
   .nav-home{
     margin-top:20px;
+  }
+  footer p{
+    font-size: 0.8em;
   }
 }
