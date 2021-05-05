@@ -258,6 +258,12 @@ h4+p {
 
 @media only screen and (min-width: 415px)  {
   #beach-banner {
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+  }
+}
+
+@media (hover: none) {
+  #beach-banner {
+    background-attachment: initial;
   }
 }
