@@ -1,0 +1,243 @@
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.back-to-top-wrapper {
+  visibility: hidden;
+  transition:3s;
+}
+
+.back-to-top-link {
+  text-decoration: none;
+  position: fixed;
+  bottom: 25px;
+  right: 55px;
+  z-index: 99;
+  background-color: #004AAD;
+  color:white;
+  border: 1px solid #004AAD;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition:0.3s;
+}
+
+.back-to-top-link > i {
+  color:white;
+  transition: color 0.3s;
+}
+
+.back-to-top-link:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color:#ff9f00;
+  border: 1px solid #004AAD;
+}
+
+.back-to-top-link > i {
+  color:white;
+}
+
+.back-to-top-link:hover > i {
+  color:#ff9f00;
+}
+
+
+.home-navbar {
+  background-color: #f8f9fa00!important;
+  transition: 0.6s;
+}
+  
+.scrolled {
+  background-color: #f8f9fa!important;
+}
+
+.navbar-brand  {
+  padding-bottom: 20px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+  color:#004AAD;
+}
+
+.navbar-light .navbar-nav .nav-home a {
+    border-radius: 20px;
+    padding: 4px 12px;
+    margin-top: 4px;
+    border: 1px solid #004AAD;
+    width:fit-content;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-light .navbar-nav .nav-home a:hover {
+  background-color: #004AAD;
+  color:white;
+}
+
+.navbar-light .navbar-nav .nav-contact a {
+  border-radius: 20px;
+  padding: 4px 12px;
+  margin-top: 4px;
+  border: 1px solid #ff9f00;
+  background-color: #ff9f00;
+  color: white ;
+  width:fit-content;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-light .navbar-nav .nav-contact a:hover {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 4px;
+  border: 1px solid #ff9f00;
+  background-color: transparent;
+  color: #ff9f00;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color:black;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color:#ff9f00;
+}
+
+
+.social-media {
+  background-color: #1c1c1c;
+}
+
+.social-media .container-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-media .social-link {
+  background-color: #3a5795;
+  width: 40px; 
+  height: 40px; 
+  margin:15px 2px; 
+  display:flex; 
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 5px;
+  transition:0.3s;
+}
+
+.social-media .social-link:hover {
+  background-color: #4060a4;
+}
+
+.social-media .social-link:nth-of-type(2) {
+  background-color: #3d739c;
+}
+
+.social-media .social-link:nth-of-type(2):hover {
+  background-color: #437eab;
+}
+
+.social-media i {
+  color:white;
+  font-size:1.2em;
+}
+
+footer {
+  margin-top:150px;
+}
+
+footer .container-fluid {
+  max-width:60%;
+}
+
+.foot {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+
+.foot-contact {
+  display:flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.foot-contact p a {
+  text-decoration: none;
+  color: #767676;
+}
+
+h5 {
+  margin-bottom:24px;
+  color: #c5c5c5;
+}
+
+.foot-book {
+  text-align: center;
+  color:#8e8e8e;
+  margin-top:24px;
+  font-size:1.2em;
+
+}
+
+.foot-book p {
+  margin-bottom:30px;
+  font-size: 1.5em;
+  color:#f8f9fa;
+}
+
+.foot-book a{
+  font-size:1.5em;
+  display:flex;
+  flex-wrap: nowrap;
+  margin:0 auto;
+  border-radius: 100px;
+  padding: 4px 20px;
+  border: 1px solid #ff9f00;
+  background-color: #ff9f00;
+  color: white ;
+  width:fit-content;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.foot-book a:hover {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border: 1px solid #ff9f00;
+  background-color: transparent;
+  color: #ff9f00;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1054px) {
+  .foot {
+    flex-direction:column;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+  }
+  .foot-contact {
+    text-align: center;
+  }
+  .nav-contact{
+    margin-bottom:20px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .foot-book a{
+    font-size:1em;
+  }
+  .nav-home{
+    margin-top:20px;
+  }
+}
