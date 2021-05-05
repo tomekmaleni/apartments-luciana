@@ -73,9 +73,14 @@ h4+p {
   height: 80vh!important;
 }
 
+#beach {
+  max-width: 100%;
+  height:100%;
+}
+
 #beach-banner {
-  /* max-width: 100%;
-  height:100%; */
+  display:inline-flex;
+  width:100%;
   height: 30vh;
   min-height: 300px;
   /* Create the parallax scrolling effect */
