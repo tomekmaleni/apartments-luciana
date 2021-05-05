@@ -60,7 +60,6 @@ h4+p {
   height: 80vh;
   min-height: 300px;
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -257,13 +256,7 @@ h4+p {
 }
 
 @media only screen and (min-width: 415px)  {
-  #beach-banner {
-    /* background-attachment: fixed; */
-  }
-}
-
-@media (hover: none) {
-  #beach-banner {
-    background-attachment: initial;
+  #beach-banner, .carousel-item {
+    background-attachment: fixed;
   }
 }
