@@ -176,6 +176,11 @@ footer .container-fluid {
   color: #767676;
 }
 
+.foot-contact p a:hover {
+  text-decoration: none;
+  color: #767676;
+}
+
 h5 {
   margin-bottom:24px;
   color: #c5c5c5;
