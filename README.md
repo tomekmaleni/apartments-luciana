@@ -1,1 +1,1 @@
-# luciana-apartmets
+# luciana-apartments
