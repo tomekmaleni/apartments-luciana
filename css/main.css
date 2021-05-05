@@ -74,6 +74,7 @@ h4+p {
 }
 
 #beach-banner {
+  background-image: url('images/Beaches/fabio-fistarol-vkLv1LP_xCw-unsplash.jpg');
   height: 30vh;
   min-height: 300px;
   /* Create the parallax scrolling effect */
