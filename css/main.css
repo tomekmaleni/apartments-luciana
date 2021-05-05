@@ -76,17 +76,20 @@ h4+p {
 #beach {
   max-width: 100%;
   height:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #beach-banner {
   display:inline-flex;
   width:100%;
   height: 30vh;
-  min-height: 300px;
+  /* min-height: 300px; */
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
