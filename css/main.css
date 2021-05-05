@@ -91,6 +91,11 @@ h4+p {
   -o-background-size: cover;
   background-size: cover;
   margin-bottom: 150px;
+
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 0;
 }
 
 .beaches {
@@ -255,8 +260,8 @@ h4+p {
   }
 }
 
-/* @media only screen and (max-width: 415px)  {
+@media only screen and (min-width: 415px)  {
   #beach-banner, .carousel-item {
     background-attachment: fixed;
   }
-} */
+}
