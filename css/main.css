@@ -80,6 +80,15 @@ h4+p {
   align-items: center;
 }
 
+.sticky {
+  width: 100vw;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 0;
+}
+
 #beach-banner {
   display:inline-flex;
   width:100%;
@@ -91,11 +100,6 @@ h4+p {
   -o-background-size: cover;
   background-size: cover;
   margin-bottom: 150px;
-
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  z-index: 0;
 }
 
 .beaches {
