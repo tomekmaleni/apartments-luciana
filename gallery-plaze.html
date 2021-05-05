@@ -453,22 +453,6 @@
             $(document).ready(function () {
                 $('#lightgallery').lightGallery();
             });
-
-            function addCode() {
-                var fs = require('fs');
-                var files = fs.readdirSync('/images/Beaches/');
-                for (let i of files) {
-                    console.log(files);
-                    document.getElementById("lightgallery").innerHTML +=
-                        `<li class="" data-responsive="images/Beaches/${i}" data-src="images/Luciana/${i}"
-            data - sub - html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>" >
-                <a href="">
-                    <img class="img-responsive" src="images/Beaches/${i}">
-                    </a>
-                </li>`;
-                }
-            }
-            addCode();
         </script>
         <script src="js/gallery.js"></script>
 </body>
