@@ -96,6 +96,7 @@ hr {
 }
 
 #lightgallery {
+  margin-bottom:100px;
   /* Prevent vertical gaps */
   line-height: 0;
   
