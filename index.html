@@ -238,22 +238,6 @@
         img.src = images[index];
       }
     }
-    $(window).load(function () {
-      /* Preload code goes here */
-      let images = ['images/carousel/otokPag.jpg',
-        'images/carousel/martin-stroissnig-0UBj8bSj8vI-unsplash.jpg',
-        'images/carousel/kat-von-wood-QNR6pbCZW3Y-unsplash.jpg',
-        'images/carosel/mate-melega-9xVoc7snzhI-unsplash.jpg',
-        'images/carousel/gaspar-uhas-cyp1pum5PqI-unsplash.jpg',
-        'images/carousel/gaspar-uhas-oG4sjAdB-lE-unsplash.jpg',
-        'images/carousel/ivan-ulamec-5BQr04Uquaw-unsplash.jpg',
-        'images/carousel/sophie-pedrinazzi-XdYqk2owJW8-unsplash.jpg'];
-      /* images is an array with image metadata */
-      preload(images);
-
-      var $nav = $("nav");
-      $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-    });
     // When the user scrolls down 20px from the top of the document, show the button
     $(document).scroll(function () {
       let scrollToTopButton = document.querySelector(".back-to-top-wrapper");
@@ -272,6 +256,23 @@
         $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
       });
     });
+    $(window).load(function () {
+      /* Preload code goes here */
+      let images = ['images/carousel/otokPag.jpg',
+        'images/carousel/martin-stroissnig-0UBj8bSj8vI-unsplash.jpg',
+        'images/carousel/kat-von-wood-QNR6pbCZW3Y-unsplash.jpg',
+        'images/carosel/mate-melega-9xVoc7snzhI-unsplash.jpg',
+        'images/carousel/gaspar-uhas-cyp1pum5PqI-unsplash.jpg',
+        'images/carousel/gaspar-uhas-oG4sjAdB-lE-unsplash.jpg',
+        'images/carousel/ivan-ulamec-5BQr04Uquaw-unsplash.jpg',
+        'images/carousel/sophie-pedrinazzi-XdYqk2owJW8-unsplash.jpg'];
+      /* images is an array with image metadata */
+      preload(images);
+
+      var $nav = $("nav");
+      $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+    });
+
   </script>
 </body>
 
