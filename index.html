@@ -228,6 +228,30 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
+    $(window).load(function () {
+      /* Preload code goes here */
+      let images = ['images/carousel/otokPag.jpg',
+        'images/carousel/martin-stroissnig-0UBj8bSj8vI-unsplash.jpg',
+        'images/carousel/kat-von-wood-QNR6pbCZW3Y-unsplash.jpg',
+        'images/carosel/mate-melega-9xVoc7snzhI-unsplash.jpg',
+        'images/carousel/gaspar-uhas-cyp1pum5PqI-unsplash.jpg',
+        'images/carousel/gaspar-uhas-oG4sjAdB-lE-unsplash.jpg',
+        'images/carousel/ivan-ulamec-5BQr04Uquaw-unsplash.jpg',
+        'images/carousel/sophie-pedrinazzi-XdYqk2owJW8-unsplash.jpg'];
+      function preload(imageArray, index) {
+        index = index || 0;
+        if (imageArray && imageArray.length > index) {
+          var img = new Image();
+          img.onload = function () {
+            preload(imageArray, index + 1);
+          }
+          img.src = images[index][‘serving_url’];
+        }
+        /* images is an array with image metadata */
+        preload(images);
+      });
+
+
     // When the user scrolls down 20px from the top of the document, show the button
     $(document).scroll(function () {
       let scrollToTopButton = document.querySelector(".back-to-top-wrapper");
